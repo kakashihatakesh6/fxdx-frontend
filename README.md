@@ -183,11 +183,11 @@ Licensed under the [MIT License](LICENSE).
 graph TD
     A[User Interface - Browser] --> B[Next.js React App]
     B --> C[Dashboard Components]
-    B --> D[Analytics & Chart Engine (Recharts)]
-    B --> E[Cards & Reports Modules]
+    B --> D[Analytics and Chart Engine]
+    B --> E[Cards and Reports Modules]
     C --> F[Reusable UI Components]
-    D --> G[Chart Rendering & Data Mapping]
-    E --> H[PDF/CSV Report Generation]
+    D --> G[Chart Rendering and Data Mapping]
+    E --> H[PDF and CSV Report Generation]
 
     B --> I[State Management / API Layer]
     I --> J[Data Sources / APIs / Storage]
@@ -195,7 +195,7 @@ graph TD
 
     style B fill:#f0f0ff,stroke:#999,stroke-width:2px
     style I fill:#f5f5f5,stroke:#ccc,stroke-width:1px
-```
+
 
 - **Frontend Driven**: Entire app runs on the client with API integrations for data
 - **Chart-Driven UX**: Uses Recharts for clean interactive analytics
