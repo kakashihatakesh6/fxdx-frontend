@@ -180,26 +180,84 @@ Licensed under the [MIT License](LICENSE).
 ## 🏗️ Architecture
 
 ```mermaid
-graph TD
+graph TB
     A[User Interface - Browser] --> B[Next.js React App]
     B --> C[Dashboard Components]
     B --> D[Analytics and Chart Engine]
     B --> E[Cards and Reports Modules]
+    B --> I[State Management / API Layer]
+
     C --> F[Reusable UI Components]
     D --> G[Chart Rendering and Data Mapping]
     E --> H[PDF and CSV Report Generation]
-
-    B --> I[State Management / API Layer]
     I --> J[Data Sources / APIs / Storage]
     J --> K[Backend APIs or External Integrations]
 
+    subgraph "Dashboard Layer"
+        C
+        D
+        E
+    end
+
+    subgraph "Report & Visualization"
+        G
+        H
+    end
+
+    subgraph "Core Logic"
+        F
+        I
+    end
+
+    subgraph "Backend Integrations"
+        K1[REST APIs]
+        K2[GraphQL APIs]
+        K3[Database Queries]
+    end
+
+    K --> K1
+    K --> K2
+    K --> K3
+
     style B fill:#f0f0ff,stroke:#999,stroke-width:2px
     style I fill:#f5f5f5,stroke:#ccc,stroke-width:1px
-
-
-- **Frontend Driven**: Entire app runs on the client with API integrations for data
-- **Chart-Driven UX**: Uses Recharts for clean interactive analytics
-- **Modular UI**: Component-driven architecture using Tailwind and Lucide
-- **Report Layer**: Export and download options for financial summaries
+```
 
 ---
+
+## 🤝 Contributing
+
+1. 🍴 Fork the repository
+2. 🌿 Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. 💾 Commit your changes (`git commit -m 'Add amazing feature'`)
+4. 📤 Push to the branch (`git push origin feature/amazing-feature`)
+5. 🔄 Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- 🎮 Steam Web API for game integration
+- 🔗 Various OAuth providers for authentication
+- ⛓️ Ethereum and Solana ecosystems for blockchain features
+- 🛠️ Open source community for amazing tools and libraries
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the gaming community**
+
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=gamex-backend)
+![Last Commit](https://img.shields.io/github/last-commit/username/gamex-backend)
+![Issues](https://img.shields.io/github/issues/username/gamex-backend)
+
+</div> 
+
+
