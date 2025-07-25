@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💸 FXDX Financial Dashboard
 
-## Getting Started
+A beautiful, modern financial dashboard built with Next.js, React, and Tailwind CSS. Effortlessly manage your cards, track transactions, analyze spending, and generate insightful financial reports—all in one elegant interface.
 
-First, run the development server:
+![Dashboard Screenshot](public/credit-card-up.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Dashboard Overview**: Instantly view your balances, recent activity, and key financial stats.
+- **Cards Management**: Add, view, and manage multiple payment cards with stylish card visuals and quick actions.
+- **Transaction History**: Search, filter, and paginate through all your personal, business, and credit transactions.
+- **Analytics**: Interactive charts for income, expenses, savings, spending by category, weekly patterns, and progress toward financial goals.
+- **Reports**: Generate and download detailed financial, tax, expense, and investment reports. Quick stats and one-click report generation.
+- **Responsive & Accessible**: Fully responsive design with accessible UI components.
+- **Dark Mode**: Beautiful light and dark themes out of the box.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/) 15
+- [React](https://react.dev/) 19
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [Recharts](https://recharts.org/) (data visualization)
+- [Lucide React](https://lucide.dev/) (icons)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+1. **Install dependencies:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Run the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+3. **Open your browser:**
+
+   Visit [http://localhost:3000](http://localhost:3000) to view the app.
+
+---
+
+## 📁 Project Structure
+
+- `src/app/` — App entry, layout, and global styles
+- `src/components/dashboard/` — Dashboard, cards, analytics, reports, sidebar, and more
+- `src/components/ui/` — Reusable UI components (button, input, label)
+- `public/` — Static assets (images, icons)
+
+---
+
+## 🎨 Customization & Theming
+
+- Built with Tailwind CSS and custom CSS variables for easy theming
+- Supports light and dark mode
+
+---
+
+## 📜 License
+
+MIT
